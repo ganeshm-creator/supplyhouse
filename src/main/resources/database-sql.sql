@@ -1,0 +1,2 @@
+create table account(account_id int  primary key, creation_date timestamp);
+create table orders (order_id int, account_id int, order_date timestamp, primary key (order_id), foreign key (account_id) references account(account_id));
